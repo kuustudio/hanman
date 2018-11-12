@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>{$chapter.book.bookname}-{$chapter.chapter_name}</title>
+    <meta name="description" content="韩漫为大家带来最新韩国漫画大全，这里有超多韩国漫画资源，无论是韩国少女漫画，还是恐怖漫画，总有一个让你酣畅淋漓">
+    <link href="http://www.gumua.com/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="/static/css/swiper-3.4.2.min.css">
+    <link href="/static/css/pc_reset.css" rel="stylesheet">
+    <link href="/static/css/manhua.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+    <script src="/static/js/imgSwitch.js"></script>
+    <script src="/static/js/downfoot.js"></script>
+</head>
+<body class="r_body" style="">
+<script>
+    window.localStorage.setItem('history', window.location.href);
+</script>
+
+<div class="fi_foot" style="display: none;">
+    <div class="fi_top_l">
+        <a class="fi_logo" href="/"></a>
+        <a class="fi_quanping" id="fi_quanping">全屏</a>
+    </div>
+    <div class="fi_foot_r">
+        <div class="fi_top_r">{$chapter.book.bookname}<span>{$chapter.chapter_name}</span></div>
+        <a href="{:url('books/index',['id'=>$chapter.book_id])}" class="fi_foot_up"></a>
+        <a href="javascript:;" onclick="end()" class="fi_foot_down"></a>
+
+        <div class="fi_foot_classify">
+            <div class="fi_classify_r">
+                <i class="fi_classify_img"></i>
+                <div class="fi_classify" style="display: none;">
+                    <div class="fi_classify_tab">
+                        <span>目录</span>
+                    </div>
+                    <ul class="fi_classify_ul" style="height: 602.5px;">
+                        {volist name="chapters" id="vo"}
+                        <li><a class="" href="{:url('chapters/index',['id'=>$vo.id])}">{$vo.chapter_name}</a></li>
+                        {/volist}
+                    </ul>
+                </div>
+            </div>
+            <div class="fi_classify_after" style="display: none;"></div>
+        </div>
+    </div>
+</div>
+
+<!--返回顶部-->
+<div class="fi_go" style="right: 168px;">
+    <a href="{:url('books/index',['id'=>$chapter.book_id])}" class="fi_go_menu"></a>
+    <a href="javascript:;" class="fi_go_back"></a>
+</div>
+
+<!--弹窗-->
+<div class="fi_mask"></div>
+<div class="fi_dialog">
+    <div class="fi_dialog_r">
+        <p></p>
+        <a href="{:url('books/index',['id'=>$chapter.book_id])}">返回详情页</a>
+        <span>关闭</span>
+    </div>
+</div>
+
+<div class="r_header">
+    <div class="m1100 header">
+        <div class="fl r_exit_read"><a href="{:url('books/index',['id'=>$chapter.book_id])}"><i></i><span>退出阅读</span></a></div>
+        <a class="m_logo" href="/"><img src="/static/images/logo.png"></a>
+        <div class="m_search">
+            <div class="m_search_i">
+                <input type="text" id="txt_seach" placeholder="输入漫画名">
+                <a class="m_search_se" href="javascript:;" onclick="seach()">
+                    <img src="/static/images/search.png">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="m1100 m_content">
+    <div class="ov r_tab">
+        <div class="fl r_tab_l">
+            <b>{$chapter.book.bookname}</b>
+            <span>{$chapter.chapter_name}</span>
+        </div>
+        <div class="fr r_tab_r">
+            {if $next != "null"}
+            <a href="{:url('chapters/index',['id'=>$next.id])}" class="fr r_tab_down">下一章节</a>
+            {/if}
+            <div class="fr t_tab_ac">
+                <select id="sel" onchange="cpage(this.value)">
+                    {volist name="chapters" id="vo"}
+                    {if $vo.id == $chapter.id}
+                    <option value="{$vo.id}" selected="selected">{$vo.chapter_name}</option>
+                    {else /}
+                    <option value="{$vo.id}">{$vo.chapter_name}</option>
+                    {/if}
+                    {/volist}
+                </select>
+            </div>
+            {if $prev != "null"}
+            <a href="{:url('chapters/index',['id'=>$prev.id])}" class="fr r_tab_up">上一章节</a>
+            {/if}
+        </div>
+
+
+
+
+    </div>
+    <div class="r_img ">
+        {volist name="photos" id="vo"}
+        <img src="/static/upload/book/{$chapter.book.id}/{$chapter.id}/{$vo.id}.jpg" alt="{$chapter.book.bookname}-{$chapter.chapter_name}">
+       {/volist}
+        <!--免责声明-->
+        <div class="read_dis">
+            本页内容均来自互联网，咕嘛动漫与内容的出处无关，如有违反您的权益，或您发现有任何不良内容或图片错误，<a href="javascript:;">请联系我们</a>，我们将修正该动漫图片。
+        </div>
+
+    </div>
+    <div class="ov r_page">
+
+        <div class="fr r_tab_r" data-page="1" data-i="1">
+            {if $next != "null"}
+            <a href="{:url('chapters/index',['id'=>$next.id])}" class="fr r_tab_down">下一章节</a>
+            {/if}
+            <div class="fr t_tab_ac">
+                <select id="sel1" onchange="cpage(this.value)">
+                    {volist name="chapters" id="vo"}
+                    {if $vo.id == $chapter.id}
+                    <option value="{$vo.id}" selected="true">{$vo.chapter_name}</option>
+                    {else /}
+                    <option value="{$vo.id}">{$vo.chapter_name}</option>
+                    {/if}
+                    {/volist}
+                </select>
+            </div>
+            {if $prev != "null"}
+            <a href="{:url('chapters/index',['id'=>$prev.id])}" class="fr r_tab_up">上一章节</a>
+            {/if}
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+<script src="/static/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="/static/js/manhua.js"></script>
+<script>
+    function cpage(value) {
+        window.location.href = "/index/chapters/index/id/" + value + ".html";
+    }
+</script>
+
+
+
+
+
+<script>
+    function seach() {
+        var keyword = document.getElementById("txt_seach").value;
+        if (keyword == "") {
+            keyword = "女装设计师";
+        }
+        window.location.href = '/index/index/search/keyword/' + keyword;
+    }
+</script>
+</body>
+</html>

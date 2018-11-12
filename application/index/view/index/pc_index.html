@@ -1,0 +1,196 @@
+{extend name="pub/pc_base" /}
+{block name="content"}
+<div class="m_navs">
+    <div class="m1100 m_nav">
+        <a href="/" class="active">首页</a>
+        <a href="{:url('books/booklist')}">分类</a>
+        <a href="{:url('index/history')}">阅读历史</a>
+    </div>
+</div>
+
+<!--悬浮-->
+<div class="m_fixed" style="top: 100px;">
+    <ul class="m_fixed_ul">
+        <li class="active"><a href="#zx">最新更新</a></li>
+        <li><a href="#zr">最新上架</a></li>
+        <li><a href="#wj">完结优选</a></li>
+    </ul>
+    <a class="m_fixed_top">顶部</a>
+</div>
+
+<div class="m1100 m_content">
+    <div class="m_tab">
+        {volist name="tags" id="vo"}
+        <a href="{:url('books/booklist',['tag' => $vo.tagname])}">{$vo.tagname}</a>
+        {/volist}
+    </div>
+    <div class="m_banner swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transform: translate3d(-1100px, 0px, 0px); transition-duration: 0ms;">
+
+            <div class="swiper-slide swiper-slide-prev" style="width: 1100px;">
+                <a class="fl m_banner_l" href="#">
+                    <img src="https://wx2.sinaimg.cn/mw690/ab72f980ly1fx52z9mek9j20b40a0jyb.jpg"></a>
+                <div class="fr m_banner_r">
+                    <div class="m_ban_rt">
+                        {volist name="banners" id="vo" offset=0 length=2}
+                        <a class="m_ban_first" href="{:url('books/index',['id'=>$vo.book_id])}">
+                            <img src="/static/upload/banner/{$vo.pic_name}">
+                        </a>
+                        {/volist}
+                    </div>
+                    <div class="m_ban_rb">
+                        {volist name="banners" id="vo" offset=2 length=2}
+                        <a class="m_ban_first" href="{:url('books/index',['id'=>$vo.book_id])}">
+                            <img src="/static/upload/banner/{$vo.pic_name}">
+                        </a>
+                        {/volist}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
+                class="swiper-pagination-bullet"></span><span
+                class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                class="swiper-pagination-bullet"></span>
+        </div>
+    </div>
+
+    <!--最新更新-->
+    <a name="zx" class="zx"></a>
+    <div class="ov m_new">
+        <div class="fl m_new_l">
+            <div class="ov m_new_top">
+                <span class="fl m_new_img"></span>
+                <a href="{:url('books/booklist',[])}" class="fr m_new_more">更多</a>
+            </div>
+            <ul class="ov m_new_ul">
+                {volist name="updates" id="vo"}
+                <li>
+                    <a href="{:url('books/index',['id'=>$vo.id])}">
+                        <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                        <h3>{$vo.bookname}</h3>
+                        <p>更新于：<span>{$vo.update_time}</span></p>
+                        <p>更新至第<i>{$vo.chapter_count}</i>话</p>
+                    </a>
+                </li>
+                {/volist}
+            </ul>
+        </div>
+        <div class="fr m_new_r">
+            <div class="ov m_new_tab">
+                <h2 class="fl">更新排行</h2>
+            </div>
+            <div>
+                <ul class="m_ph_ul" style="display:block">
+                    {volist name="updates" id="vo"}
+                    <li>
+                        <a href="{:url('books/index',['id'=>$vo.id])}">
+                            <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                            <div class="m_ph_d">
+                                <h2 class="m_ph_h2">{$vo.bookname}</h2>
+                                <p class="m_ph_p1">{$vo.summary}</p>
+                                <p class="m_ph_p2">更新至第<i>{$vo.chapter_count}</i>话</p>
+                                <div class="m_ph_hot"><i></i>0</div>
+                            </div>
+                        </a>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--新作发布-->
+    <a name="zr" class="zr"></a>
+    <div class="ov m_hot">
+        <div class="fl m_new_l">
+            <div class="ov m_new_top">
+                <span class="fl m_hot_img"></span>
+                <a href="{:url('books/booklist',[])}" class="fr m_new_more">更多</a>
+            </div>
+            <ul class="ov m_new_ul">
+                {volist name="newest" id="vo"}
+                <li>
+                    <a href="{:url('books/index',['id'=>$vo.id])}">
+                        <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                        <h3>{$vo.bookname}</h3>
+                        <p>更新于：<span>{$vo.update_time}</span></p>
+                        <p>更新至第<i>{$vo.chapter_count}</i>话</p>
+                    </a>
+                </li>
+                {/volist}
+            </ul>
+        </div>
+        <div class="fr m_new_r">
+            <div class="ov m_new_tab">
+                <h2 class="fl">新作发布</h2>
+            </div>
+            <div>
+                <ul class="m_ph_ul" style="display:block">
+                    {volist name="newest" id="vo"}
+                    <li>
+                        <a href="{:url('books/index',['id'=>$vo.id])}">
+                            <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                            <div class="m_ph_d">
+                                <h2 class="m_ph_h2">{$vo.bookname}</h2>
+                                <p class="m_ph_p1">{$vo.summary}</p>
+                                <p class="m_ph_p2">更新至第<i>{$vo.chapter_count}</i>话</p>
+                                <div class="m_ph_hot"><i></i>0</div>
+                            </div>
+                        </a>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--完结优选-->
+    <a name="wj" class="wj"></a>
+    <div class="ov m_end">
+        <div class="fl m_new_l">
+            <div class="ov m_new_top">
+                <span class="fl m_end_img"></span>
+                <a href="{:url('books/booklist',[])}" class="fr m_new_more">更多</a>
+            </div>
+            <ul class="ov m_new_ul">
+                {volist name="ends" id="vo"}
+                <li>
+                    <a href="{:url('books/index',['id'=>$vo.id])}">
+                        <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                        <h3>{$vo.bookname}</h3>
+                        <p>更新于：<span>{$vo.update_time}</span></p>
+                        <p>更新至第<i>{$vo.chapter_count}</i>话</p>
+                    </a>
+                </li>
+                {/volist}
+            </ul>
+        </div>
+        <div class="fr m_new_r">
+            <div class="ov m_new_tab">
+                <h2 class="fl">完结优选</h2>
+            </div>
+            <div>
+                <ul class="m_ph_ul" style="display:block">
+                    {volist name="ends" id="vo"}
+                    <li>
+                        <a href="{:url('books/index',['id'=>$vo.id])}">
+                            <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                            <div class="m_ph_d">
+                                <h2 class="m_ph_h2">{$vo.bookname}</h2>
+                                <p class="m_ph_p1">{$vo.summary}</p>
+                                <p class="m_ph_p2">更新至第<i>{$vo.chapter_count}</i>话</p>
+                                <div class="m_ph_hot"><i></i>0</div>
+                            </div>
+                        </a>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+{/block}

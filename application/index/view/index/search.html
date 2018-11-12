@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://m.gumua.com/Seach/ -->
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>韩漫搜索</title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/swiper-3.4.2.min.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body style="">
+
+<div class="s_top">
+    <a href="http://m.gumua.com/Seach/" class="s_top_back" id="goBack"></a>
+    <div class="s_top_input">
+        <input type="text" id="txt_seach" placeholder="请输入关键字">
+    </div>
+    <a href="javascript:;" class="s_top_search" onclick="seach()"></a>
+</div>
+
+<div class="s_result">
+    <h3>热门搜索：</h3>
+    <a href="{:url('index/search',['keyword'=>'淑女花苑'])}">淑女花苑</a>
+    <a href="{:url('index/search',['keyword'=>'要交换吗'])}">要交换吗</a>
+    <a href="{:url('index/search',['keyword'=>'制服的诱惑'])}">制服的诱惑</a>
+</div>
+
+<ul class="sr_ul">
+    {volist name="books" id="vo"}
+    <li>
+        <a href="{:url('books/index',['id'=>$vo.id])}">
+            <img src="/static/upload/book/{$vo.id}/cover.jpg" class="fl">
+            <div class="sr_tit">
+                <h2>{$vo.bookname}</h2>
+                <h3>作者：{$vo.author.author_name}</h3>
+                <p>{$vo.summary} </p>
+            </div>
+        </a>
+    </li>
+    {/volist}
+    <div style="text-align: center">
+        {$books|raw}
+    </div>
+</ul>
+
+
+<script>
+    function seach() {
+        var keyword = document.getElementById("txt_seach").value;
+        if (keyword == "") {
+            keyword = "制服的诱惑";
+        }
+        window.location.href = "{:url('index/search',['keyword'=>'" + keyword + "'])}";
+    }
+</script>
+{include file="pub/others" /}
+
+
+
+</body>
+</html>

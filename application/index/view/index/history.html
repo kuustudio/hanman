@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+</head>
+<body>
+<script>
+    var url = window.localStorage.getItem('history');
+    if (url){
+        window.location.href = url;
+    } else {
+        setTimeout(function () {
+            history.go(-1);
+        },1000);
+    }
+</script>
+<h5>您还没有任何阅读历史，请先寻找你钟爱的漫画</h5>
+</body>
+</html>

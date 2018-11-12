@@ -1,0 +1,114 @@
+{extend name="pub/pc_base" /}
+{block name="content"}
+<div class="d_bgs">
+    <div class="m1100 d_bgi">
+        <a class="fl d_bgi_href" href="javascript:;">
+            <img src="/static/upload/book/{$book.id}/cover.jpg"></a>
+        <div class="d_bg">
+            <div class="d_bg_t">
+                <a href="javascript:;">{$book.bookname}</a>
+                {volist name="tags" id="vo"}
+                <a href="{:url('books/booklist',['tag'=>$vo])}"><span>{$vo}</span></a>
+                {/volist}
+            </div>
+
+            <div class="d_bg_ti">
+                <i></i>
+                <span>{$book.bookname}</span>
+            </div>
+            <div class="d_bg_name">
+                <i>作者：{$book.author.author_name}</i>
+            </div>
+            <div class="d_bg_ce" >
+                <i>简介：</i> {$book.summary}
+            </div>
+            <div class="d_bg_zt">
+                <span>状态：<i>{$book.end?'已完结':'连载中'}</i></span>
+                <span>人气：<i>1864.5万</i></span>
+            </div>
+            <div class="d_bg_b">
+                <a href="{:url('chapters/index',['id' => $start])}" class="d_bg_read">开始阅读</a>
+                <a href="javascript:;" class="d_bg_collect"><i></i>收藏</a>
+            </div>
+            <span class="m_day_score"><i>9</i></span>
+        </div>`
+    </div>
+    <div class="details_bgs">
+        <img src="">
+    </div>
+</div>
+
+<!--免责声明-->
+<div class="ov m1100 Disclaimer">
+    <a href="javascript:;" class="fl Disclaimer_href">
+        <img src="/static/images/mianze.jpg">
+        <p>作者首页</p>
+    </a>
+    <div class="Disclaimer_tit">
+        此漫画由<b>风之动漫</b>分享发布，以供爱好者研究画法技巧。咕嘛动漫仅提供展示平台，若侵犯到您的权益，请<a href="javascript:;">联系我们</a>删除，我们始终在为版权维护与作品推广而努力。
+    </div>
+</div>
+
+
+<div class="m1100 m_content">
+
+    <!--漫画目录-->
+    <div class="ov m_new">
+        <div class="fl m_new_l">
+            <div class="d_menu_tab"><i></i><span>漫画目录</span></div>
+            <div class="d_menu_paixu">
+                <a class="d_inverted" mode="0">倒序</a>
+            </div>
+            <div class="d_menu">
+                <ul>
+                    {volist name="book.chapters" id="vo"}
+                    <li idx="0"><a href="{:url('chapters/index',['id'=>$vo.id])}"><b>{$vo.chapter_name}</b></a></li>
+                    {/volist}
+                </ul>
+                <a href="javascript:;" class="d_menu_much" style="display: block;">点击查看更多章节</a>
+            </div>
+
+
+            <!--其他人还看了-->
+            <div class="d_look">
+                <div class="d_look_tab"><i></i><span>其他人还看了</span></div>
+                <div class="d_look_i">
+                    <ul>
+                        {volist name="recommand" id="vo"}
+                        <li>
+                            <a href="{:url('books/index',['id'=>$vo.id])}">
+                                <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                                <h3>{$vo.bookname}</h3>
+                                <p>{$vo.summary}</p>
+                            </a>
+                        </li>
+                        {/volist}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fr m_new_r">
+            <div class="ov m_new_tab">
+                <h2 class="fl">全站排行</h2>
+            </div>
+            <div>
+                <ul class="m_ph_ul" style="display:block">
+                    {volist name="updates" id="vo"}
+                    <li>
+                        <a href="{:url('books/index',['id'=>$vo.id])}">
+                            <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                            <div class="m_ph_d">
+                                <h2 class="m_ph_h2">{$vo.bookname}</h2>
+                                <p class="m_ph_p1">{$vo.summary}</p>
+                                <p class="m_ph_p2">更新至第{$vo.chapter_count}话</i></p>
+                                <div class="m_ph_hot"><i></i>0</div>
+                            </div>
+                        </a>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

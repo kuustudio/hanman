@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>{$title|default="韩漫_韩国漫画"}</title>
+    <meta name="description" content="韩漫为大家带来最新韩国漫画大全，这里有超多韩国漫画资源，无论是韩国少女漫画，还是恐怖漫画，总有一个让你酣畅淋漓">
+    <link href="http://www.gumua.com/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="/static/css/swiper-3.4.2.min.css">
+    <link href="/static/css/pc_reset.css" rel="stylesheet">
+    <link href="/static/css/manhua.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.10.1/jquery.js"></script>
+    <script src="/static/js/imgswitch.js"></script>
+    <script src="/static/js/downfoot.js"></script>
+</head>
+<body style="">
+
+<div id="header">
+
+    <div class="m1100 header">
+        <a class="m_logo" href="/"><img src="/static/images/logo.png"></a>
+        <div class="m_search">
+            <div class="m_search_i">
+                <input type="text" id="txt_seach" placeholder="输入漫画名">
+                <a class="m_search_se" href="javascript:;" onclick="seach()">
+                    <img src="/static/images/search.png">
+                </a>
+            </div>
+
+        </div>
+
+        <div class="m_register">
+            <ul>
+                <li class="reg_share">
+                    <i></i><span>分享</span>
+                    <div class="reg_totalS">
+                        <div class="reg_total">
+                            <a href="javascript:;" class="red_total_a1">
+                                <i></i>
+                                <span>复制链接</span>
+                                <textarea cols="1" rows="1" id="biao1"></textarea>
+                            </a>
+                            <a href="javascript:;" class="red_total_a2">
+                                <i></i>
+                                <span>QQ</span>
+                            </a>
+                            <a href="javascript:;" class="red_total_a3">
+                                <i></i>
+                                <span>微信</span>
+                                <div class="Ashar_box">
+                                    <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1541729954591">
+                                        <a href="javascript:;" class="Abds_sqq" data-cmd="sqq" title="分享到QQ好友"></a><a
+                                            href="javascript:;" class="Abds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="javascript:;" class="red_total_a4">
+                                <img src="https://wx3.sinaimg.cn/mw690/ab72f980gy1fpct17m0r7j2076076aaj.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="reg_collect"><i></i><span>收藏</span></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <div class="m_bg_b">
+        <img src="/static/images/collection.png">
+    </div>
+
+</div>
+<!--弹窗-->
+<div class="fi_mask"></div>
+<div class="reg_mask">
+    <p class="reg_mask_bg"></p>
+    <p class="reg_mask_tit">喜欢我们的话可以<span>CTRL+D</span>加入收藏夹哦！</p>
+    <a href="javascript:;" class="reg_mask_button">朕知道了</a>
+</div>
+
+<!--弹窗-->
+<div class="reg_lianjie">
+    <h3>http://www.hanman.com</h3>
+    <a href="javascript:;">确定</a>
+</div>
+
+
+<script>
+    function seach() {
+        var keyword = document.getElementById("txt_seach").value;
+        if (keyword == "") {
+            keyword = "女装设计师";
+        }
+        window.location.href = '/index/index/search/keyword/' + keyword;
+    }
+</script>
+
+
+
+{block name="content"}{/block}
+
+<!--友情链接-->
+<div class="m_links">
+    <div class="ov m1100 m_link">
+        <div class="fl m_link_l">
+            <h2>友情链接</h2>
+            <a href="javascript:;"></a>
+        </div>
+        <div class="fr m_link_r">
+            <ul>
+                <li><a href="https://www.51rosi.com">美女图片</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div class="m_foots">
+    <div class="m1100 m_foot">
+        <div class="m_foot_link">
+            <a href="javascript:;">关于我们</a>
+            <a href="javascript:;">联系我们</a>
+            <a href="javascript:;">商务合作</a>
+            <a href="javascript:;">免责声明</a>
+            <a href="javascript:;">友情链接</a>
+        </div>
+        <div class="m_foot_copy">
+            CopyRight © 2013年-2019年 hanman.co <a href="javascript:;">韩漫漫画</a> All Rights Reserved
+        </div>
+        <div class="m_foot_ba"><a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">备案编号：苏ICP备17045997号</a>
+        </div>
+    </div>
+</div>
+
+
+<script src="/static/js/swiper-3.4.2.jquery.min.js"></script>
+<script src="/static/js/manhua.js"></script>
+
+
+</body>
+</html>

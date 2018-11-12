@@ -1,0 +1,70 @@
+{extend name="pub/base" /}
+{block name="content"}
+
+<div class="d_header">
+    <div class="ov d_he">
+        <a href="javascript:;" class="fl d_he_img">
+            <img src="/static/upload/book/{$book.id}/cover.jpg">
+        </a>
+        <div class="d_he_r">
+            <a class="d_he_ra" href="javascript:;">{$book.bookname}</a>
+            <p class="d_he_rp1">状态：{$book.end?'已完结':'连载中'}</p>
+            <p class="d_he_rp2">作者：{$book.author.author_name}</p>
+        </div>
+        <div class="d_he_start"><i></i></div>
+        <div class="d_he_read">
+            {if $start == -1}
+            <a href="#" class="flex_item">暂无内容</a>
+            {else /}
+            <a href="{:url('chapters/index',['id' => $start])}" class="flex_item" id="read_btn">开始阅读</a>
+            {/if}
+        </div>
+    </div>
+    <div class="d_he_tit" style="height: auto;">
+        <span>简介：</span>{$book.summary}
+    </div>
+    <div class="d_he_zk"><i></i></div>
+</div>
+<div class="d_want">
+
+</div>
+
+<div class="d_cen">
+    <div class="d_c_tab">
+        <h3>目录</h3>
+    </div>
+    <ul class="d_cen_ul">
+        {volist name="book.chapters" id="vo"}
+        <li>
+            <a href="{:url('chapters/index',['id'=>$vo.id])}">{$vo.chapter_name}</a>
+        </li>
+        {/volist}
+    </ul>
+    <a href="jvascript:;" class="d_cen_look">点击查看所有章节</a>
+</div>
+
+<!--热门推荐-->
+<div class="Dis_hot">
+    <div class="d_c_tab">
+        <h3>相关热门</h3>
+    </div>
+
+    <div class="m_lists">
+        {volist name="recommand" id="vo"}
+        <div class="infobox">
+            <a href="{:url('books/index',['id'=>$vo.id])}" class="gimg">
+                <img src="/static/upload/book/{$vo.id}/cover.jpg">
+            </a>
+            <a href="{:url('books/index',['id'=>$vo.id])}" class="ginfo">
+                <span class="gname">{$vo.bookname}</span>
+                <span class="gname_strar"><i></i></span>
+                <b>{$vo.summary}</b>
+            </a>
+            <a href="{:url('books/index',['id'=>$vo.id])}" class="gbtn">阅读</a>
+        </div>
+        {/volist}
+    </div>
+</div>
+
+{include file="pub/foot" /}
+{/block}

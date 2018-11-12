@@ -1,0 +1,41 @@
+{extend name="pub/pc_base" /}
+{block name="content"}
+<div class="m_navs">
+    <div class="m1100 m_nav">
+        <a href="/">首页</a>
+        <a href="{:url('books/booklist')}" class="active">分类</a>
+        <a href="{:url('index/history')}">阅读历史</a>
+    </div>
+</div>
+
+<div class="m1100 l_nav">
+    <span>题材：</span>
+    <a href="{:url('books/booklist')}" class="{$param == '全部' ? 'active' : ''}">全部</a>
+    {volist name="tags" id="vo"}
+    <a href="{:url('books/booklist',['tag' => $vo.tagname])}" class="{$param == $vo.tagname ? 'active' : ''}">{$vo.tagname}</a>
+    {/volist}
+
+</div>
+
+<div class="m1100 l_content">
+    <ul class="ov m_new_ul">
+        {volist name="books" id="vo"}
+        <li>
+            <a href="{:url('books/index',['id'=>$vo.id])}">
+                <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                <h3>{$vo.bookname}</h3>
+                <p>更新于：<span>{$vo.update_time}</span></p>
+                <p>状态：<i>{$vo.end?"已完结":"连载中"}</i></p>
+            </a>
+        </li>
+       {/volist}
+
+    </ul>
+
+</div>
+
+<div class="pager">
+    {$books|raw}
+</div>
+
+{/block}

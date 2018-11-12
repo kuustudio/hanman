@@ -1,0 +1,80 @@
+{extend name="pub/base" /}
+{block name="title"}
+<title>章节管理</title>
+{/block}
+
+{block name="body"}
+<section class="Hui-article-box">
+    <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+        <span class="c-gray en">&gt;</span>
+        {$book_name}
+        <span class="c-gray en">&gt;</span>
+        {$chapter_name}
+        <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px"
+           href="javascript:location.replace(location.href);" title="刷新"><i class="Hui-iconfont">&#xe68f;</i></a>
+    </nav>
+    <div class="Hui-article">
+        <article class="cl pd-20">
+            <a href="{:url('chapters/index',['id'=>$chapter_id,'book_id'=>$book_id])}"
+               class="btn btn-primary ">返回</a>
+            <div class="cl pd-5 bg-1 bk-gray mt-20">
+                <div class="row cl">
+                    <form action="{:url('upload')}" enctype="multipart/form-data" method="post">
+                        <input type="hidden" value="{$chapter_id}" name="chapter_id">
+                        <input type="hidden" value="{$book_id}" name="book_id">
+                        <div class="formControls col-xs-3 col-sm-3">
+                            <input class="input-text" type="file" name="image[]" multiple="multiple"/>
+                        </div>
+                        <div class="formControls col-xs-6 col-sm-6">
+                            <input class="btn btn-primary radius" type="submit" value="上传"/>&nbsp;<span
+                                style="color: red">图片大小不要超过500kb，格式只能是jpg</span>
+                        </div>
+                    </form>
+                    <a class="btn btn-primary radius" href="{:url('delete',['chapter_id' => $chapter_id])}"
+                       onClick="return confirm('确定删除?');">删除图片</a>
+                </div>
+            </div>
+
+            <hr data-am-widget="divider" style="" class="am-divider am-divider-default"/>
+                <div class="cl pd-5 bg-1 bk-gray mt-20">
+                    <div class="row cl">
+                        {volist name="photos" id="vo"}
+                            <img onclick="pic_del({$vo.id})" style="max-width: 130px;height: auto"
+                                 src="/static/upload/book/{$book_id}/{$chapter_id}/{$vo.id}.jpg"/>
+                        {/volist}
+                    </div>
+                </div>
+        </article>
+    </div>
+</section>
+<script type="text/javascript">
+    /*资讯-删除*/
+    function pic_del(id) {
+        layer.confirm('确认要删除吗？', function (index) {
+            var url = "{:url('delete',['id' => 'id1'])}";
+            $.ajax({
+                type: 'POST',
+                url: url.replace('id1',id),
+                dataType: 'json',
+                success: function (data) {
+                    var result = JSON.parse(data);
+                    if (result.err == 0) {
+                        layer.msg(result.msg, {icon: 1, time: 1000}, function () {
+                            location.reload();
+                        });
+                    } else {
+                        layer.msg(result.msg, {icon: 2}, function () {
+                            location.reload();
+                        });
+                    }
+                },
+                error: function (data) {
+                    console.log(data.msg);
+                },
+            });
+        });
+    }
+</script>
+{/block}
+
+</html>

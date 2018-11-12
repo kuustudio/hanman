@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1,user-scalable=no">
+    <title>{$chapter.book.bookname}-{$chapter.chapter_name}</title>
+    <meta name="description" content="{$chapter.book.summary}">
+    <!--页面资源信息,JSON-->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/swiper-3.4.2.min.css">
+    <style type="text/css">.tip-model {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+    }
+
+    .tip-bg {
+        cursor: pointer;
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tip-main {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        background: #fff;
+        border-radius: 10px;
+        padding: 0 5%;
+        padding-bottom: 20px;
+    }
+
+    .tip-model-ico {
+        width: 20%;
+        display: block;
+        margin: 0 auto;
+        transform: translate(-50%, -60%);
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+
+    .tip-model-tit {
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        line-height: 14px;
+        font-weight: bold;
+        margin: 50px auto 0;
+        height: 14px;
+    }
+
+    .tip-list li {
+        display: block;
+        color: #999;
+        font-size: 13px;
+        height: 13px;
+        line-height: 13px;
+        margin-top: 12px;
+    }
+
+    .copy-txt {
+        width: 100%;
+        height: 40px;
+        background-color: #f4f4f4;
+        border-radius: 3px;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 30px;
+    }
+
+    .copy-btn {
+        display: block;
+        width: 100%;
+        height: 45px;
+        background-color: #919cf4;
+        border-radius: 6px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .tip-list {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 12px;
+    }
+
+    .close-tip-model {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        width: 18px;
+        height: 18px;
+        background-color: #e6e6e6;
+        border-radius: 50%;
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        transform: rotate(45deg);
+        line-height: 16px;
+        text-indent: 0px;
+        cursor: pointer;
+    }
+
+    .tip-model-btn-ico {
+        position: fixed;
+        left: 0;
+        bottom: 30vh;
+        width: 20%;
+        display: block;
+        cursor: pointer;
+    }</style>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        window.localStorage.setItem('history', window.location.href);
+    </script>
+</head>
+<body style="">
+<div class="read_tit">
+    <a href="javascript:history.go(-1)" class="read_back"></a>
+    <h1 class="read_h1">{$chapter.chapter_name}</h1>
+    <a href="/" class="read_goback"></a>
+</div>
+
+<div class="mask"></div>
+<div class="mask_bg">
+    <ul>
+        {volist name="chapters" id="vo"}
+        <li>
+            <a href="{:url('chapters/index',['id'=>$vo.id])}">{$vo.chapter_name}</a>
+        </li>
+        {/volist}
+    </ul>
+</div>
+
+
+<!--头部-->
+<div class="l_top" style="display: none; position: relative;">
+
+    <div class="fr l_top_r">
+        <span>目录</span>
+        <a href="javascript:;"></a>
+    </div>
+
+    <div style="float: left">
+        <a href="/" style="text-decoration: none;color: white">回首页</a>
+    </div>
+</div>
+
+<!--漫画内容-->
+<div class="l_cen">
+    {volist name="photos" id="vo"}
+    <img src="/static/upload/book/{$chapter.book.id}/{$chapter.id}/{$vo.id}.jpg">
+    {/volist}
+
+</div>
+
+<!--底部声明-->
+<div class="statement">
+    <div class="statement_page">
+        {if $prev != "null"}
+        <a href="{:url('chapters/index',['id'=>$prev.id])}" class="s_page1"><i></i></a>
+        {/if}
+        {if $next != "null"}
+        <a href="{:url('chapters/index',['id'=>$next.id])}" class="s_page2"><i></i></a>
+        {/if}
+        <a href="javascript:;" class="s_page3"><i></i></a>
+    </div>
+</div>
+<!--进度条-->
+<div class="l_progressBar">
+    <div class="l_progressBar_r"><i></i><span></span></div>
+</div>
+
+
+<div id="goTop"><a></a></div>
+{include file="pub/foot" /}
+{include file="pub/others" /}
+</body>
+</html>

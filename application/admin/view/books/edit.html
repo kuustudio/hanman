@@ -1,0 +1,93 @@
+{extend name="pub/base" /}
+{block name="title"}
+<title>漫画编辑</title>
+{/block}
+
+{block name="body"}
+<article class="cl pd-20">
+    <form action="{:url('update')}" method="post" class="form form-horizontal" enctype="multipart/form-data">
+        <input type="hidden" value="{$book.id}" name="id">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>漫画名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$book.bookname}" name="bookname">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">标签：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$book.tags}" placeholder="各个标签用|隔开" name="tags">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>作者：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="{$book.author.author_name}" name="author">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">封面：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="file" name="cover" class="input-text">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">简介：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <textarea name="summary" cols="" rows="" class="textarea"
+                          dragonfly="true" onKeyUp="textarealength(this,100)">{$book.summary}</textarea>
+                <p class="textarea-numberbar"><em class="textarea-length">0</em>/100</p>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">状态：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
+				<select class="select" name="end" size="1">
+					<option value="0" {$book.end?"":"selected"}>连载中</option>
+					<option value="1" {$book.end?"selected":""}>已完结</option>
+				</select>
+				</span>
+            </div>
+        </div>
+
+
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</article>
+
+<!--请在下方写此页面业务相关的脚本-->
+{include file="pub/validate_scripts" /}
+<script type="text/javascript">
+    $(function(){
+        $("#form-admin-add").validate({
+            rules:{
+                bookname:{
+                    required:true,
+                    minlength:1,
+                    maxlength:50
+                },
+                author:{
+                    required:true,
+                    minlength:1,
+                    maxlength:10
+                }
+            },
+            onkeyup:false,
+            focusCleanup:true,
+            success:"valid",
+        });
+    });
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+{/block}
+</html>

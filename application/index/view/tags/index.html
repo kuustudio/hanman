@@ -1,0 +1,56 @@
+{extend name="pub/base" /}
+{block name="content"}
+<div class="list_tab">
+    <a href="/">首页</a>
+    <a href="{:url('tags/index')}" class="active">漫画分类</a>
+    <a href="{:url('index/history')}">阅读历史</a>
+</div>
+
+<div class="c_cen">
+    {volist name="tags" id="vo"}
+    <a href="{:url('books/booklist',['tag' => $vo.tagname])}">
+        <img src="" class="pics">
+        <p>{$vo.tagname}</p>
+    </a>
+    {/volist}
+    <script>
+        var imgs = [
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0oxfntnfj2066066gly.jpg',
+            'https://wx3.sinaimg.cn/mw690/ab72f980ly1fx0oxfns80j2066066mxi.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0oxfo5b2j20660663yv.jpg',
+            'https://wx3.sinaimg.cn/mw690/ab72f980ly1fx0oxfo4ntj2066066jrm.jpg',
+            'https://wx1.sinaimg.cn/mw690/ab72f980ly1fx0oxfpqwij20660663yt.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1jsz9j2066066t8k.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1kp5hj20660663yn.jpg',
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0ox1kszcj2066066t91.jpg',
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0ox1kzm4j2066066jrl.jpg',
+            'https://wx3.sinaimg.cn/mw690/ab72f980ly1fx0ox1l0ikj2066066jrl.jpg',
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0ox1l6cqj2066066aaa.jpg',
+            'https://wx1.sinaimg.cn/mw690/ab72f980ly1fx0ox1oas6j2066066q32.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1og38j20660663yv.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1or8bj2066066t91.jpg',
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0oxfntnfj2066066gly.jpg',
+            'https://wx3.sinaimg.cn/mw690/ab72f980ly1fx0oxfns80j2066066mxi.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0oxfo5b2j20660663yv.jpg',
+            'https://wx3.sinaimg.cn/mw690/ab72f980ly1fx0oxfo4ntj2066066jrm.jpg',
+            'https://wx1.sinaimg.cn/mw690/ab72f980ly1fx0oxfpqwij20660663yt.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1jsz9j2066066t8k.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1kp5hj20660663yn.jpg',
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0ox1kszcj2066066t91.jpg',
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0ox1kzm4j2066066jrl.jpg',
+            'https://wx3.sinaimg.cn/mw690/ab72f980ly1fx0ox1l0ikj2066066jrl.jpg',
+            'https://wx2.sinaimg.cn/mw690/ab72f980ly1fx0ox1l6cqj2066066aaa.jpg',
+            'https://wx1.sinaimg.cn/mw690/ab72f980ly1fx0ox1oas6j2066066q32.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1og38j20660663yv.jpg',
+            'https://wx4.sinaimg.cn/mw690/ab72f980ly1fx0ox1or8bj2066066t91.jpg',
+        ]
+
+        $(document).ready(function () {
+            $('.pics').each(function (index,el) {
+                el.src = imgs.pop();
+            })
+        })
+    </script>
+</div>
+{include file="pub/foot" /}
+{/block}
