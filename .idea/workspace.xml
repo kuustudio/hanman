@@ -2,440 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/hanman.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Authors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Banner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/BaseAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Books.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Chapters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Photos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Sitemap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/validate/Banner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/validate/Book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/authors/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/authors/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/banner/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/banner/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/banner/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/books/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/books/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/books/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/chapters/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/chapters/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/login/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/photos/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/pub/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/pub/foot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/pub/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/pub/index_scripts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/pub/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/pub/validate_scripts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/pub/wpdate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/controller/Chapters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/api/controller/Photos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/controller/Base.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/controller/Books.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/controller/Chapters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/controller/Tags.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/books/booklist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/books/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/books/pc_booklist.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/books/pc_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/chapters/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/chapters/pc_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/index/history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/index/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/index/pc_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/index/pc_search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/index/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/index/vip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/pub/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/pub/foot.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/pub/others.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/pub/pc_base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/index/view/tags/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/model/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/model/Author.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/model/Banner.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/model/Book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/model/Chapter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/model/Photo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/model/Tags.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/provider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/service/AuthorService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/service/BookService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/service/ChapterService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/service/PhotoService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/service/TagsService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/tags.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/site.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/trace.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/H-ui.admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/H-ui.login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/H-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/manhua.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/pc_reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/css/swiper-3.4.2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/iconfont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/fonts/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/Dialog.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/admin-login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/admin-loginform-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/arrows.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/back3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/book1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/book2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/classify.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/collection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/d_hanman.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/detail-order-inverted.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/goTop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/go_classify.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/go_down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/go_menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/go_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/go_up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/go_weixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/hot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/index.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/index2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/m_end.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/m_hot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/m_new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/mianze.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/next2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/prev2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/qq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/read.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/read1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/red_lianjie.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/red_qq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/red_weixin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/share1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/sort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/sort2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/standard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/start2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/tel2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/tel3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/images/unfold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/H-ui.admin.page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/H-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/copy.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/downfoot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/imgswitch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/m_manhua.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/manhua.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/js/swiper-3.4.2.jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/WdatePicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/calendar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/lang/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/lang/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/lang/zh-tw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/WdatePicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/datePicker.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/default/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/default/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/datepicker-dev.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/whyGreen/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/whyGreen/datepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/whyGreen/img.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/datatables/1.10.0/jquery.dataTables.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/layer/2.4/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/laypage/1.2/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/lib/laypage/1.2/skin/laypage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/blue/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/blue/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/blue/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/blue/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/default/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/default/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/default/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/default/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/green/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/green/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/green/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/green/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/orange/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/orange/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/orange/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/orange/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/red/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/red/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/red/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/red/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/yellow/acrossTab-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/yellow/acrossTab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/yellow/icon_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/skin/yellow/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route/route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runtime/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/think" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/base.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/convention.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/lang/zh-cn.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/App.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Build.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Collection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Container.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Debug.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Env.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Exception.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Facade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Hook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Loader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Paginator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Url.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/Validate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/Driver.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Lite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Memcache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Memcached.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Redis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Sqlite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Wincache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/cache/driver/Xcache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Ini.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/config/driver/Xml.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/Command.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/Input.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/Output.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/bin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/bin/hiddeninput.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Build.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Clear.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Help.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Lists.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/Make.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/RunServer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/Validate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/controller.api.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/controller.plain.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/controller.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/middleware.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/model.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/make/stubs/validate.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/command/optimize/Schema.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/input/Argument.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/input/Definition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/input/Option.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Ask.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Descriptor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Formatter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/Question.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/descriptor/Console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Buffer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/driver/Nothing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/formatter/Stack.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/formatter/Style.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/question/Choice.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/console/output/question/Confirmation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Builder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Connection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Expression.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/Query.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Mysql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Pgsql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/builder/Sqlsrv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Mysql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Pgsql.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Sqlite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/Sqlsrv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/connector/pgsql.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/exception/BindParamException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/exception/DataNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/db/exception/ModelNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/debug/Console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/debug/Html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ClassNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/DbException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ErrorException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/Handle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/HttpException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/HttpResponseException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/PDOException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/RouteNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/TemplateNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ThrowableError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/exception/ValidateException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/App.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Build.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Cookie.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Debug.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Env.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Hook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Lang.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Log.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Middleware.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Url.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/Validate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/facade/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/log/driver/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/log/driver/Socket.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Collection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Pivot.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/Relation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Attribute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/Conversion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/ModelEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/RelationShip.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/SoftDelete.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/concern/TimeStamp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsTo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/BelongsToMany.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasMany.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasManyThrough.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/HasOne.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphMany.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphOne.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/MorphTo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/model/relation/OneToOne.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/paginator/driver/Bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/Builder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/Utils.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/exception/Faild.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/exception/Failed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/exception/Timeout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Pipes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Unix.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/process/pipes/Windows.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Json.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Jsonp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Jump.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Redirect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/response/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/response/Xml.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/AliasRule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/Dispatch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/Domain.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/Resource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/Rule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/RuleGroup.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/RuleItem.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/RuleName.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/dispatch/Callback.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/dispatch/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/dispatch/Module.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/dispatch/Redirect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/dispatch/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/dispatch/Url.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/route/dispatch/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Memcache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Memcached.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/session/driver/Redis.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/template/TagLib.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/template/driver/File.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/template/taglib/Cx.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/validate/ValidateRule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/view/driver/Php.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/think/view/driver/Think.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/library/traits/controller/Jump.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/tpl/default_index.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/tpl/dispatch_jump.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/tpl/page_trace.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thinkphp/tpl/think_exception.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -450,24 +17,25 @@
     <session id="1746759040">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="html" value="2" />
+          <entry key="html" value="3" />
           <entry key="php" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="3" />
           <entry key="PHP" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
@@ -493,53 +61,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="265">
               <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Sitemap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-              <folding>
-                <element signature="e#130#149#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/admin/view/pub/menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/site.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/Chapters.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/api/controller/Photos.php">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -582,7 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -593,18 +120,34 @@
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -638,18 +181,20 @@
       <workItem from="1541818300604" duration="417000" />
       <workItem from="1541845236689" duration="317000" />
       <workItem from="1541989783897" duration="1229000" />
-      <workItem from="1542015970452" duration="1287000" />
+      <workItem from="1542015970452" duration="1495000" />
+      <workItem from="1542074962469" duration="34000" />
+      <workItem from="1542169397863" duration="71000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3250000" />
+    <option name="totallyTimeSpent" value="3563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21728595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22374798" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -684,12 +229,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
+    <entry file="file://$PROJECT_DIR$/public/static/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Sitemap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        <state relative-caret-position="493">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding>
+            <element signature="e#130#149#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/site.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/application/api/controller/Chapters.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -701,26 +255,17 @@
     <entry file="file://$PROJECT_DIR$/application/api/controller/Photos.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/site.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Sitemap.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/view/pub/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-          <folding>
-            <element signature="e#130#149#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="349">
+          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/static/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/view/pub/menu.html">
+    <entry file="file://$PROJECT_DIR$/application/index/view/index/pc_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="265">
+          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
         </state>
       </provider>
     </entry>
