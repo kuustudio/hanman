@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0025)http://m.gumua.com/Seach/ -->
 <html lang="zh">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -18,7 +17,9 @@
     <div class="s_top_input">
         <input type="text" id="txt_seach" placeholder="请输入关键字">
     </div>
-    <a href="javascript:;" class="s_top_search" onclick="seach()"></a>
+    <a href="javascript:;" class="s_top_search" onclick="seach()">
+        <img src="/static/images/search.png">
+    </a>
 </div>
 
 <div class="s_result">
@@ -51,9 +52,9 @@
     function seach() {
         var keyword = document.getElementById("txt_seach").value;
         if (keyword == "") {
-            keyword = "制服的诱惑";
+            keyword = "女装设计师";
         }
-        window.location.href = "{:url('index/search',['keyword'=>'" + keyword + "'])}";
+        window.location.href = '/index/index/search/keyword/' + keyword;
     }
 </script>
 {include file="pub/others" /}

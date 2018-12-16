@@ -49,7 +49,7 @@ class Chapters extends BaseAdmin
                 "id" => $data["book_id"],
                 "update_time" => date("Y-m-d H:i:s", time())
             ];
-            $book = Book::update($param);
+            Book::update($param);
 
             $this->success('新增成功');
         }else{

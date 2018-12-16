@@ -42,7 +42,8 @@ class Books extends Base
             'tags' => $tags,
             'recommand' => $recommand,
             'start' => $start,
-            'title' => $book->bookname.'无修在线阅读'
+            'title' => $book->bookname.'无修在线阅读',
+            'des' => $book->summary
         ]);
         if (!isMobile()){
             $updates = $this->bookService->getBooks('update_time',[],10);

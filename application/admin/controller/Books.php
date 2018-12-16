@@ -3,7 +3,6 @@
 namespace app\admin\controller;
 
 use app\model\Book;
-use think\Controller;
 use think\facade\App;
 use think\Request;
 use app\model\Tags;

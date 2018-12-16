@@ -95,3 +95,12 @@ function isMobile() {
     }
     return false;
 }
+
+function http($url){
+//    $client = new GuzzleHttp\Client();
+//    $res = $client->request('GET', $url);
+//    return $res->getBody();
+    $headers = array('Accept' => 'application/json');
+    $request = Requests::get($url, $headers);
+    return $request->body;
+}
