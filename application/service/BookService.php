@@ -29,7 +29,7 @@ class BookService
 
     public function getPagedBooksAdmin($where = '1=1'){
         $data = Book::where($where);
-        $books = $data->with('author')->order('id','desc')
+        $books = $data->with('author,chapters')->order('id','desc')
             ->paginate(5,false,
                 [
                     'type'     => 'util\AdminPage',

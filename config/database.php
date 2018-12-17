@@ -21,7 +21,7 @@ return [
     // 密码
     'password'        => 'root',
     // 端口
-    'hostport'        => '8889',
+    'hostport'        => '',
     // 连接dsn
     'dsn'             => '',
     // 数据库连接参数

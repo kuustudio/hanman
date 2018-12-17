@@ -52,7 +52,7 @@
                         <th width="80">ID</th>
                         <th>漫画名</th>
                         <th width="100">封面</th>
-                        <th width="120">作者</th>
+                        <th width="120">章节数</th>
                         <th width="150">更新时间</th>
                         <th width="80">是否完结</th>
                         <th width="120">操作</th>
@@ -67,7 +67,7 @@
                             <img width="50%" class="picture-thumb" src="/static/upload/book/{$vo.id}/cover.jpg">
                         </td>
                         <td>
-                            <a href="{:url('authors/search',['author_name' => $vo.author.author_name])}">{$vo.author.author_name}</a>
+                            {$vo.chapter_count}
                         </td>
                         <td>{$vo.update_time}</td>
                         <td>{$vo.end?"完结":"连载中"}</td>

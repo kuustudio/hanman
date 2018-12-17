@@ -23,6 +23,7 @@ class Xqmanhua extends BaseAdmin
     {
         $this->tagsService = new \app\service\TagsService();
         $this->bookService = new \app\service\BookService();
+        set_time_limit(-1);
     }
 
     public function getlist(){
@@ -63,7 +64,7 @@ class Xqmanhua extends BaseAdmin
             $book->bookname = $bookname;
             $book->author_id = 1;
             $book->summary = $desc;
-            $book->end = 1;
+            $book->end = 0;
             if (!empty($tags)){
                 $book->tags = $tags;
                 $tags_arr = explode('|',$tags); //拆分标签成数组
@@ -128,6 +129,7 @@ class Xqmanhua extends BaseAdmin
                 }
                 try{
                     $content = @file_get_contents("http://cdn.xqmanhua.com".$pic['img']);
+                    usleep(500000);
                     file_put_contents($dir.'/'.$photo->id.'.jpg',$content);
                 }catch (Exception $e){
                     Log::record($e->getMessage(),'error');
