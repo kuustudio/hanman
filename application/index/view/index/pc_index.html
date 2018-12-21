@@ -66,7 +66,7 @@
                 <a href="{:url('books/booklist',[])}" class="fr m_new_more">更多</a>
             </div>
             <ul class="ov m_new_ul">
-                {volist name="updates" id="vo"}
+                {volist name="newest" id="vo"}
                 <li>
                     <a href="{:url('books/index',['id'=>$vo.id])}">
                         <img src="/static/upload/book/{$vo.id}/cover.jpg">
@@ -80,11 +80,11 @@
         </div>
         <div class="fr m_new_r">
             <div class="ov m_new_tab">
-                <h2 class="fl">更新排行</h2>
+                <h2 class="fl">新作上线</h2>
             </div>
             <div>
                 <ul class="m_ph_ul" style="display:block">
-                    {volist name="updates" id="vo"}
+                    {volist name="newest" id="vo"}
                     <li>
                         <a href="{:url('books/index',['id'=>$vo.id])}">
                             <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
@@ -102,7 +102,7 @@
         </div>
     </div>
 
-    <!--新作发布-->
+    <!--最热漫画-->
     <a name="zr" class="zr"></a>
     <div class="ov m_hot">
         <div class="fl m_new_l">
@@ -111,7 +111,7 @@
                 <a href="{:url('books/booklist',[])}" class="fr m_new_more">更多</a>
             </div>
             <ul class="ov m_new_ul">
-                {volist name="newest" id="vo"}
+                {volist name="hot" id="vo"}
                 <li>
                     <a href="{:url('books/index',['id'=>$vo.id])}">
                         <img src="/static/upload/book/{$vo.id}/cover.jpg">
@@ -129,7 +129,7 @@
             </div>
             <div>
                 <ul class="m_ph_ul" style="display:block">
-                    {volist name="newest" id="vo"}
+                    {volist name="hot" id="vo"}
                     <li>
                         <a href="{:url('books/index',['id'=>$vo.id])}">
                             <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">

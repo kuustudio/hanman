@@ -7,7 +7,6 @@
 </div>
 
 <div class="m_banner swiper-container swiper-container-horizontal">
-
     <div class="swiper-wrapper" style="transform: translate3d(-375px, 0px, 0px); transition-duration: 0ms;">
         {volist name="banners" id="vo"}
         <div class="swiper-slide swiper-slide-prev" style="width: 375px;">
@@ -34,7 +33,7 @@
     </div>
     <div class="m_recently_swiper swiper-container swiper-container-horizontal">
         <div class="swiper-wrapper">
-            {volist name="updates" id="vo"}
+            {volist name="newest" id="vo"}
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="{:url('books/index',['id'=>$vo.id])}" class="m_recently_a">
                     <img src="/static/upload/book/{$vo.id}/cover.jpg">
@@ -49,12 +48,12 @@
 
 <div class="m_recently">
     <div class="m_recently_tab">
-        <h2>新作上线</h2>
+        <h2>最多点击</h2>
         <a href="{:url('books/booklist',[])}" class="m_new_more">更多</a>
     </div>
     <div class="m_recently_swiper swiper-container swiper-container-horizontal">
         <div class="swiper-wrapper">
-            {volist name="newest" id="vo"}
+            {volist name="hot" id="vo"}
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="{:url('books/index',['id'=>$vo.id])}" class="m_recently_a">
                     <img src="/static/upload/book/{$vo.id}/cover.jpg">
@@ -93,7 +92,7 @@
         <h2>全站排行</h2>
         <div class="m_whole_table">
             <a href="javascript:;">最新</a>
-            <a href="javascript:;">尝鲜</a>
+            <a href="javascript:;">最热</a>
             <a href="javascript:;">完结</a>
 
         </div>
@@ -114,7 +113,7 @@
             {/volist}
         </ul>
         <ul class="m_ph_ul">
-            {volist name="updates" id="vo"}
+            {volist name="hot" id="vo"}
             <li>
                 <a href="{:url('books/index',['id'=>$vo.id])}">
                     <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">

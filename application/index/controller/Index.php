@@ -14,23 +14,53 @@ class Index extends Base
 
     public function index()
     {
-        $banners = Banner::limit(5)->order('id','desc')->select();
+        $banners = cache('banners_homepage');
+        if (!$banners){
+            $banners = Banner::limit(5)->order('id','desc')->select();
+            cache('banners_homepage',$banners);
+        }
         if (isMobile()){
-            $updates = $this->bookService->getBooks('update_time');
-            $newest = $this->bookService->getBooks('id');
-            $ends = $this->bookService->getBooks('update_time',[['end','=','1']]);
+            $newest = cache('newest_homepage_mobile');
+            if (!$newest){
+                $newest = $this->bookService->getBooks('create_time');
+                cache('newest_homepage_mobile',$newest);
+            }
+            $hot = cache('hot_homepage_mobile');
+            if (!$hot){
+                $hot = $this->bookService->getBooks('click');
+                cache('hot_homepage_mobile',$hot,60);
+            }
+            $ends = cache('ends_homepage_mobile');
+            if (!$ends){
+                $ends = $this->bookService->getBooks('update_time',[['end','=','1']]);
+                cache('ends_homepage_mobile',$ends);
+            }
+
         }else{
-            $updates = $this->bookService->getBooks('update_time','1=1',10);
-            $newest = $this->bookService->getBooks('id','1=1',10);
-            $ends = $this->bookService->getBooks('update_time',[['end','=','1']],10);
+            $newest = cache('newest_homepage_pc');
+            if (!$newest){
+                $newest = $this->bookService->getBooks('create_time','1=1',10);
+                cache('newest_homepage_pc',$newest);
+            }
+            $hot = cache('hot_homepage_pc');
+            if (!$hot){
+                $hot = $this->bookService->getBooks('click','1=1',10);
+                cache('hot_homepage_pc',$hot,60);
+            }
+            $ends = cache('ends_homepage_pc');
+            if (!$ends){
+                $ends = $this->bookService->getBooks('update_time',[['end','=','1']],10);
+                cache('ends',$ends);
+            }
+
         }
 
         $rands = $this->bookService->getRandBooks();
         $this->assign([
             'banners' => $banners,
             'banners_count' => count($banners),
-            'updates' => $updates,
             'newest' => $newest,
+            'hot' => $hot,
             'ends' => $ends,
             'rands' => $rands
         ]);

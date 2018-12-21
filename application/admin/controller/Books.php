@@ -42,6 +42,9 @@ class Books extends BaseAdmin
         ];
         $data = $this->bookService->getPagedBooksAdmin($where);
         $books = $data['books'];
+        foreach ($books as &$book) {
+            $book['chapter_count'] = count($book->chapters);
+        }
         $count = $data['count'];
         $this->assign([
             'books' => $books,

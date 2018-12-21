@@ -28,7 +28,8 @@ class Books extends Base
             Cache::set('book' . $id, $book);
             Cache::set('book' . $id . 'tags', $tags);
         }
-
+        $book->click = $book->click + 1;
+        $book->isUpdate(true)->save();
         $recommand = $this->bookService->getRandBooks();
         $start = Cache::get('book_start' . $id);
         if ($start == false) {

@@ -129,7 +129,6 @@ class Xqmanhua extends BaseAdmin
                 }
                 try{
                     $content = @file_get_contents("http://cdn.xqmanhua.com".$pic['img']);
-                    usleep(500000);
                     file_put_contents($dir.'/'.$photo->id.'.jpg',$content);
                 }catch (Exception $e){
                     Log::record($e->getMessage(),'error');

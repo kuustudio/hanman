@@ -53,6 +53,7 @@
                         <th>漫画名</th>
                         <th width="100">封面</th>
                         <th width="120">章节数</th>
+                        <th width="120">点击数</th>
                         <th width="150">更新时间</th>
                         <th width="80">是否完结</th>
                         <th width="120">操作</th>
@@ -69,6 +70,7 @@
                         <td>
                             {$vo.chapter_count}
                         </td>
+                        <td>{$vo.click}</td>
                         <td>{$vo.update_time}</td>
                         <td>{$vo.end?"完结":"连载中"}</td>
                         <td class="f-14 td-manage">

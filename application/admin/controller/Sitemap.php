@@ -51,15 +51,6 @@ class Sitemap extends BaseAdmin
             array_push( $data,$temp);
         }
 
-        $chapters = Chapter::all();
-        foreach ($chapters as $key=>$chapter){
-            $temp = array(
-                'loc' => $site_name.'/index/chapters/index/id/'.$chapter->id.'.html',
-                'priority' => '0.9',
-            );
-            array_push( $data,$temp);
-        }
-
         array_push($data,$main);
         array_push($data,$booklist);
         return $data;
