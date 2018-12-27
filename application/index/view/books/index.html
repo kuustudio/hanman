@@ -4,12 +4,17 @@
 <div class="d_header">
     <div class="ov d_he">
         <a href="javascript:;" class="fl d_he_img">
-            <img src="/static/upload/book/{$book.id}/cover.jpg">
+            <img src="{$img_site}/static/upload/book/{$book.id}/cover.jpg">
         </a>
         <div class="d_he_r">
             <a class="d_he_ra" href="javascript:;">{$book.bookname}</a>
             <p class="d_he_rp1">状态：{$book.end?'已完结':'连载中'}</p>
             <p class="d_he_rp2">作者：{$book.author.author_name}</p>
+            <p class="d_he_rp2">
+            {volist name="$tags" id="vo"}
+                <a href="{:url('books/booklist',['tag'=>$vo])}">{$vo}</a>
+                {/volist}
+            </p>
         </div>
         <div class="d_he_start"><i></i></div>
         <div class="d_he_read">
@@ -53,7 +58,7 @@
         {volist name="recommand" id="vo"}
         <div class="infobox">
             <a href="{:url('books/index',['id'=>$vo.id])}" class="gimg">
-                <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
             </a>
             <a href="{:url('books/index',['id'=>$vo.id])}" class="ginfo">
                 <span class="gname">{$vo.bookname}</span>

@@ -29,10 +29,11 @@ class Chapters extends Controller
             $map[] = ['book_id','=',$data['book_id']];
             $chapter = Chapter::where($map)->find();
             if ($chapter){
-                return json(['chapter_id' => 0]);
+                return -1;
             }
-            $result = Chapter::create($data);
-            return json($result);
+            $chapter = new Chapter();
+            $chapter->save($data);
+            return $chapter->id;
         }
        return '章节api接口';
     }

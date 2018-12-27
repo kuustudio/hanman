@@ -11,7 +11,7 @@
         {volist name="banners" id="vo"}
         <div class="swiper-slide swiper-slide-prev" style="width: 375px;">
             <a class="m_banner_l" href="{:url('books/index',['id'=>$vo.book_id])}">
-                <img src="/static/upload/banner/{$vo.pic_name}">
+                <img src="{$img_site}/static/upload/banner/{$vo.pic_name}">
                 <p>{$vo.title}</p>
             </a>
         </div>
@@ -36,7 +36,7 @@
             {volist name="newest" id="vo"}
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="{:url('books/index',['id'=>$vo.id])}" class="m_recently_a">
-                    <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                     <h3>{$vo.bookname}</h3>
                     <p>更新至第{$vo.chapter_count}话</p>
                 </a>
@@ -56,7 +56,7 @@
             {volist name="hot" id="vo"}
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="{:url('books/index',['id'=>$vo.id])}" class="m_recently_a">
-                    <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                     <h3>{$vo.bookname}</h3>
                     <p>更新至第{$vo.chapter_count}话</p>
                 </a>
@@ -76,7 +76,7 @@
             {volist name="ends" id="vo"}
             <div class="swiper-slide" style="width: 87.3684px; margin-right: 10px;">
                 <a href="{:url('books/index',['id'=>$vo.id])}" class="m_recently_a">
-                    <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                    <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                     <h3>{$vo.bookname}</h3>
                     <p>更新至第{$vo.chapter_count}话</p>
                 </a>
@@ -102,7 +102,7 @@
             {volist name="newest" id="vo"}
             <li>
                 <a href="{:url('books/index',['id'=>$vo.id])}">
-                    <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                    <img class="fl" src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                     <div class="m_ph_d">
                         <h2 class="m_ph_h2">{$vo.bookname}</h2>
                         <p class="m_ph_p1">{$vo.summary|subtext="15"}</p>
@@ -116,7 +116,7 @@
             {volist name="hot" id="vo"}
             <li>
                 <a href="{:url('books/index',['id'=>$vo.id])}">
-                    <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                    <img class="fl" src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                     <div class="m_ph_d">
                         <h2 class="m_ph_h2">{$vo.bookname}</h2>
                         <p class="m_ph_p1">{$vo.summary|subtext="15"}</p>
@@ -130,7 +130,7 @@
             {volist name="ends" id="vo"}
             <li>
                 <a href="{:url('books/index',['id'=>$vo.id])}">
-                    <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                    <img class="fl" src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                     <div class="m_ph_d">
                         <h2 class="m_ph_h2">{$vo.bookname}</h2>
                         <p class="m_ph_p1">{$vo.summary}</p>

@@ -25,7 +25,8 @@ class Base extends Controller
         }
         $this->assign([
             'url' => config('site.url'),
-            'site_name' => config('site.site_name')
+            'site_name' => config('site.site_name'),
+            'img_site' => config('site.img_site')
         ]);
     }
 }

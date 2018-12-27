@@ -13,7 +13,7 @@
         {volist name="books" id="vo"}
         <li>
             <a href="{:url('books/index',['id'=>$vo.id])}">
-                <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                 <h3>{$vo.bookname}</h3>
                 <p>更新于：<span>{$vo.update_time}</span></p>
                 <p>状态：<i>{$vo.end?"已完结":"连载中"}</i></p>

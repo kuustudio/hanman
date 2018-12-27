@@ -3,7 +3,7 @@
 <div class="d_bgs">
     <div class="m1100 d_bgi">
         <a class="fl d_bgi_href" href="javascript:;">
-            <img src="/static/upload/book/{$book.id}/cover.jpg"></a>
+            <img src="{$img_site}/static/upload/book/{$book.id}/cover.jpg"></a>
         <div class="d_bg">
             <div class="d_bg_t">
                 <a href="javascript:;">{$book.bookname}</a>
@@ -77,7 +77,7 @@
                         {volist name="recommand" id="vo"}
                         <li>
                             <a href="{:url('books/index',['id'=>$vo.id])}">
-                                <img src="/static/upload/book/{$vo.id}/cover.jpg">
+                                <img src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                                 <h3>{$vo.bookname}</h3>
                                 <p>{$vo.summary}</p>
                             </a>
@@ -96,7 +96,7 @@
                     {volist name="updates" id="vo"}
                     <li>
                         <a href="{:url('books/index',['id'=>$vo.id])}">
-                            <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                            <img class="fl" src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                             <div class="m_ph_d">
                                 <h2 class="m_ph_h2">{$vo.bookname}</h2>
                                 <p class="m_ph_p1">{$vo.summary}</p>

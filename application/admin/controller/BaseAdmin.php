@@ -21,6 +21,13 @@ class BaseAdmin extends Controller
         $this->checkAuth();
     }
 
+    public function __construct(App $app = null)
+    {
+        parent::__construct($app);
+        $img_site = config('site.img_site');
+        $this->assign('img_site', $img_site);
+    }
+
     protected function checkAuth(){
         if (!Session::has('admin')) {
             $this->redirect('admin/login/index');

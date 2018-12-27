@@ -113,7 +113,7 @@
     </div>
     <div class="r_img ">
         {volist name="photos" id="vo"}
-        <img src="/static/upload/book/{$chapter.book.id}/{$chapter.id}/{$vo.id}.jpg" alt="{$chapter.book.bookname}-{$chapter.chapter_name}">
+        <img src="{$img_site}/static/upload/book/{$chapter.book.id}/{$chapter.id}/{$vo.id}.jpg" alt="{$chapter.book.bookname}-{$chapter.chapter_name}">
        {/volist}
         <!--免责声明-->
         <div class="read_dis">

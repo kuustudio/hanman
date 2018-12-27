@@ -18,8 +18,9 @@ class Photos extends Controller
     public function save(Request $request){
         if ($request->isPost()){
             $chapter_id = $request->post('chapter_id');
-            $result = Photo::create(['chapter_id'=>$chapter_id]);
-            return json($result);
+            $pic = new Photo();
+            $pic->save(['chapter_id'=>$chapter_id]);
+            return $pic->id;
         }
         return '图片api';
     }

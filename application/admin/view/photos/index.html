@@ -40,7 +40,7 @@
                     <div class="row cl">
                         {volist name="photos" id="vo"}
                             <img onclick="pic_del({$vo.id})" style="max-width: 130px;height: auto"
-                                 src="/static/upload/book/{$book_id}/{$chapter_id}/{$vo.id}.jpg"/>
+                                 src="{$img_site}/static/upload/book/{$book_id}/{$chapter_id}/{$vo.id}.jpg"/>
                         {/volist}
                     </div>
                 </div>
