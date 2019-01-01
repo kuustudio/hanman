@@ -25,26 +25,22 @@ class Index extends BaseAdmin
         return view();
     }
 
-    public function test(){
-        return get_vip_code();
-    }
-
-    public function setvip(){
-        $books = Book::all();
-        foreach ($books as $book){
-            $i = 0;
-            foreach ($book->chapters as $chapter){
-                if ($i > config('site.vip_count')){
-                    $chapter->isvip = 1;
-                    $chapter->isupdate(true)->save();
-                }
-                $i++;
-            }
-        }
-    }
-
     public function clearCache(){
         clearCache();
         $this->success('清理缓存','index','',1);
+    }
+
+    public function xiongzhang(){
+        if ($this->request->isPost()){
+            $urls = [];
+            $start = input('start');
+            $end = input('end');
+            for ($i = $start;$i <= $end; $i++){
+                array_push($urls,config('site.url').'/index/books/index/id/'.$i.'.html') ;
+            }
+            $result = xiongzhang_push($urls);
+            $this->success($result);
+        }
+        return view();
     }
 }

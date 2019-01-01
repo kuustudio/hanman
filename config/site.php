@@ -12,5 +12,5 @@ return [
     'img_site' => 'http://img.hanman.co',
     'admin' => 'admin',
     'password' => '123456',
-    'xz_api' => 'http://data.zz.baidu.com/urls?appid=1613751078195175&token=ENXW9HZSzAefXPfj&type=realtime'
+    'xiongzhang' => 'http://data.zz.baidu.com/urls?appid=1613751078195175&token=ENXW9HZSzAefXPfj&type=realtime'
 ];

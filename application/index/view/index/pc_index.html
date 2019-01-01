@@ -132,7 +132,7 @@
                     {volist name="hot" id="vo"}
                     <li>
                         <a href="{:url('books/index',['id'=>$vo.id])}">
-                            <img class="fl" src="/static/upload/book/{$vo.id}/cover.jpg">
+                            <img class="fl" src="{$img_site}/static/upload/book/{$vo.id}/cover.jpg">
                             <div class="m_ph_d">
                                 <h2 class="m_ph_h2">{$vo.bookname}</h2>
                                 <p class="m_ph_p1">{$vo.summary}</p>

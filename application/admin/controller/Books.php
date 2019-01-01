@@ -99,12 +99,6 @@ class Books extends BaseAdmin
                         ->move($dir,'cover.jpg');
                 }
 
-                //熊掌号自动推送
-                $api = config('site.xz_api');
-                $domain = config('site.url');
-                $url = $domain.'/index/books/index/id/'.$book->id.'.html';
-                xiongzhang_push($api,$url);
-
                 $this->success('添加成功','index','',1);
             }else{
                 $this->error('添加失败');
@@ -179,4 +173,6 @@ class Books extends BaseAdmin
         $book->delete();
         return ['err' => 0,'msg' => '删除成功'];
     }
+
+
 }

@@ -42,7 +42,7 @@ class Banner extends BaseAdmin
                 if (!file_exists($dir)) {
                     mkdir($dir, 0777, true);
                 }
-                $info = $pic->validate(['size' => 2048000, 'ext' => 'jpg'])->rule('md5')->move($dir);
+                $info = $pic->validate(['size' => 2048000, 'ext' => 'jpg,jpeg,png'])->rule('md5')->move($dir);
                 if ($info){
                     $data['pic_name'] = $info->getSaveName();
                 }
@@ -75,7 +75,7 @@ class Banner extends BaseAdmin
                 if (!file_exists($dir)) {
                     mkdir($dir, 0777, true);
                 }
-                $info = $pic->validate(['size' => 2048000, 'ext' => 'jpg'])->rule('md5')->move($dir);
+                $info = $pic->validate(['size' => 2048000, 'ext' => 'jpg,jpeg,png'])->rule('md5')->move($dir);
                 if ($info){
                     $data['pic_name'] = $info->getSaveName();
                 }

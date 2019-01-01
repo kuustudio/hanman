@@ -141,7 +141,6 @@
 <div class="read_tit">
     <a href="javascript:history.go(-1)" class="read_back"></a>
     <h1 class="read_h1">{$chapter.chapter_name}</h1>
-    <a href="/" class="read_goback"></a>
 </div>
 
 <div class="mask"></div>
@@ -172,7 +171,8 @@
 <!--漫画内容-->
 <div class="l_cen">
     {volist name="photos" id="vo"}
-    <img src="{$img_site}/static/upload/book/{$chapter.book.id}/{$chapter.id}/{$vo.id}.jpg">
+    <img class="lazy" data-original="{$img_site}/static/upload/book/{$chapter.book.id}/{$chapter.id}/{$vo.id}.jpg"
+     src="https://s1.ax1x.com/2018/12/27/FRm2Ks.jpg">
     {/volist}
 
 </div>
@@ -193,10 +193,13 @@
 <div class="l_progressBar">
     <div class="l_progressBar_r"><i></i><span></span></div>
 </div>
-
-
 <div id="goTop"><a></a></div>
+<script src="/static/js/jquery.lazyload-1.9.3.min.js"></script>
+<script>
+    $("img.lazy").lazyload({ threshold :180});
+    </script>
 {include file="pub/foot" /}
 {include file="pub/others" /}
+
 </body>
 </html>

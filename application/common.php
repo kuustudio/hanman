@@ -34,10 +34,8 @@ function img_process($file,$width,$height,$path){
     $image->thumb($width, $height,think\Image::THUMB_FIXED)->save($path);
 }
 
-function xiongzhang_push($api,$url){
-    $urls = array(
-        $url
-    );
+function xiongzhang_push($urls){
+    $api = config('site.xiongzhang');
     $ch = curl_init();
     $options =  array(
         CURLOPT_URL => $api,
