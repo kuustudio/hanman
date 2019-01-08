@@ -1,0 +1,16 @@
+<div class="list_tab">
+    <a id="shouye" href="/">首页</a>
+    <a id="category" href="{:url('tags/index')}">漫画分类</a>
+    <a id="bookshelf" href="{:url('index/bookshelf')}">阅读历史</a>
+</div>
+
+<script>
+    var url = location.href;
+    if (url.indexOf('tags') > -1 || url.indexOf('booklist') > -1){
+        $('#category').addClass('active');
+    }else if (url.indexOf('bookshelf') > -1){
+        $('#bookshelf').addClass('active');
+    }else {
+        $('#shouye').addClass('active');
+    }
+</script>

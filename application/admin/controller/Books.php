@@ -109,15 +109,21 @@ class Books extends BaseAdmin
         }
     }
 
-    public function edit($id)
+    public function edit()
     {
+        $returnUrl = input('returnUrl');
+        $id = input('id');
         $book = Book::with('author')->find($id);
-        $this->assign('book',$book);
+        $this->assign([
+            'book' => $book,
+            'returnUrl' => $returnUrl
+        ]);
         return view();
     }
 
     public function update(Request $request){
         $data = $request->param();
+        $returnUrl = $data['returnUrl'];
         $validate = new \app\admin\validate\Book();
         if ($validate->check($data)){
             //作者处理
@@ -153,7 +159,7 @@ class Books extends BaseAdmin
                     header("Last-Modified: " . gmdate( "D, d M Y H:i:s" ) . "GMT" );
                     header("Cache-Control: no-cache, must-revalidate" );
                 }
-                $this->success('修改成功','index','',1);
+                $this->success('修改成功',$returnUrl,'',1);
             }else{
                 $this->error('修改失败');
             }

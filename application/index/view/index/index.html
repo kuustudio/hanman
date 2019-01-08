@@ -1,10 +1,6 @@
 {extend name="pub/base" /}
 {block name="content"}
-<div class="list_tab">
-    <a href="/" class="active">首页</a>
-    <a href="{:url('tags/index')}">漫画分类</a>
-    <a href="{:url('index/history')}">阅读历史</a>
-</div>
+{include file="pub/tab" /}
 
 <div class="m_banner swiper-container swiper-container-horizontal">
     <div class="swiper-wrapper" style="transform: translate3d(-375px, 0px, 0px); transition-duration: 0ms;">

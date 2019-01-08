@@ -1,0 +1,31 @@
+{extend name="pub/base" /}
+{block name="content"}
+{include file="pub/tab" /}
+<ul class="sr_ul">
+
+</ul>
+<script>
+    var keys = [];
+    for (i = 0; i < window.localStorage.length; i++){
+        var key = localStorage.key(i);
+        if(key.indexOf('manhua_id') > -1){
+            keys.push(key);
+        }
+    }
+    if (keys.length > 10){
+        window.localStorage.removeItem(keys[0]);
+    }
+    for (i = 0; i < window.localStorage.length; i++){
+        var key = localStorage.key(i);
+        if(key.indexOf('manhua_id') > -1){
+            var arr = JSON.parse(window.localStorage.getItem(key));
+            var $li = '<li><a href="/index/chapters/index/id/'+arr[2]+'.html">' +
+                '<img class="fl" src="{$img_site}/static/upload/book/'+arr[0]+'/cover.jpg">' +
+                '<div class="sr_tit"><h2>'+arr[1]+'</h2><h3>作者：'+arr[4]+'</h3><p>最后阅读章节：'+arr[3]+'</p></div></a></li>';
+            $("ul.sr_ul").append($li);
+        }
+    }
+</script>
+
+{include file="pub/foot" /}
+{/block}

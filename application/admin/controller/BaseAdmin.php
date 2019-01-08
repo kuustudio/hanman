@@ -25,7 +25,10 @@ class BaseAdmin extends Controller
     {
         parent::__construct($app);
         $img_site = config('site.img_site');
-        $this->assign('img_site', $img_site);
+        $this->assign([
+            'img_site' => $img_site,
+            'returnUrl' => $this->request->url(true)
+        ]);
     }
 
     protected function checkAuth(){

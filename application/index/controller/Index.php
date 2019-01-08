@@ -82,13 +82,8 @@ class Index extends Base
         return view();
     }
 
-    public function vip(Request $request){
-        if ($request->isPost()){
-            $vip_code = strtolower($request->param('vip_code'));
-            cookie('vip',$vip_code);
-            $this->success('您已经是vip了，请回网站继续浏览',url("index/history"));
-        }
-        return view();
+    public function bookshelf(){
+        return view($this->tpl);
     }
 }
 

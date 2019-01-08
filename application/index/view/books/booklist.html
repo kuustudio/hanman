@@ -1,12 +1,6 @@
 {extend name="pub/base" /}
 {block name="content"}
-
-<div class="list_tab">
-    <a href="/">首页</a>
-    <a href="{:url('tags/index')}" class="active">漫画分类</a>
-    <a href="{:url('index/history')}">阅读历史</a>
-</div>
-
+{include file="pub/tab" /}
 <!--分类列表-->
 <div class="sr_top sr_top2">
     <a href="/" class="sr_back" id="goBack">

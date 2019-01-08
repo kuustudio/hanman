@@ -1,10 +1,6 @@
 {extend name="pub/base" /}
 {block name="content"}
-<div class="list_tab">
-    <a href="/">首页</a>
-    <a href="{:url('tags/index')}" class="active">漫画分类</a>
-    <a href="{:url('index/history')}">阅读历史</a>
-</div>
+{include file="pub/tab" /}
 
 <div class="c_cen">
     {volist name="tags" id="vo"}
