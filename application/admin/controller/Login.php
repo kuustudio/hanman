@@ -11,6 +11,7 @@ namespace app\admin\controller;
 
 use think\Controller;
 use think\Request;
+use app\model\Admin;
 
 class Login extends Controller
 {
@@ -25,8 +26,9 @@ class Login extends Controller
             {
                 $this->error('验证码错误','/admin/login/index','',1);
             }
-            $admin = config('site.admin');
-            if ($admin != $request->param('admin')){
+            $username = $request->param('admin');
+            $password = md5($request->param('password').config('site.salt'));
+            if (!Admin::where('username','=',$request->param('admin')){
                 $this->error('用户名错误','/admin/login/index','',1);
             }
             $password = config('site.password');

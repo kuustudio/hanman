@@ -2,55 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/hanman.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hanman.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Authors.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Authors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Books.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Books.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Chapters.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Chapters.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/controller/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Photos.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Photos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/authors/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/authors/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/authors/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/authors/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/banner/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/banner/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/banner/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/banner/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/banner/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/banner/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/books/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/books/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/books/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/books/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/chapters/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/chapters/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/chapters/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/chapters/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/index/xiongzhang.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/index/xiongzhang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/login/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/photos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/photos/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/pub/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/pub/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/pub/index_scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/index_scripts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/pub/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Books.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Books.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/controller/Tags.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Tags.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/books/booklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/books/booklist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/books/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/books/pc_booklist.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/books/pc_booklist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/books/pc_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/books/pc_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/bookshelf.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/bookshelf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/pc_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/pc_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/pc_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/pc_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/index/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/index/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/pub/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/pub/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/pub/pc_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/pub/pc_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/index/view/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/service/AuthorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/AuthorService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/service/BookService.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/BookService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/site.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -115,23 +68,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
+      <file leaf-file-name="Login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="255" selection-start-line="255" selection-end-line="255" />
+            <state relative-caret-position="354">
+              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding>
-                <element signature="e#137#158#0#PHP" expanded="true" />
+                <element signature="e#129#150#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookService.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -172,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/service/AdminService.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Admin.php" />
         <option value="$PROJECT_DIR$/application/admin/view/pub/base.html" />
         <option value="$PROJECT_DIR$/application/admin/view/books/create.html" />
@@ -211,7 +154,6 @@
         <option value="$PROJECT_DIR$/application/admin/view/pub/head.html" />
         <option value="$PROJECT_DIR$/application/admin/view/index/xiongzhang.html" />
         <option value="$PROJECT_DIR$/application/admin/view/login/index.html" />
-        <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
         <option value="$PROJECT_DIR$/application/install/view/public/footer.html" />
         <option value="$PROJECT_DIR$/application/install/view/index/index.html" />
         <option value="$PROJECT_DIR$/application/install/view/public/header.html" />
@@ -223,6 +165,8 @@
         <option value="$PROJECT_DIR$/application/index/controller/Index.php" />
         <option value="$PROJECT_DIR$/application/service/BookService.php" />
         <option value="$PROJECT_DIR$/application/install/controller/Index.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/application/admin/controller/Login.php" />
       </list>
     </option>
   </component>
@@ -274,7 +218,77 @@
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="service" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="authors" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="books" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="chapters" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="index" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="photos" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pub" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -389,23 +403,24 @@
       <workItem from="1547114735805" duration="1810000" />
       <workItem from="1547125250589" duration="5625000" />
       <workItem from="1547177424824" duration="1687000" />
-      <workItem from="1547186737888" duration="9618000" />
+      <workItem from="1547186737888" duration="10882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88064000" />
+    <option name="totallyTimeSpent" value="89328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3281471" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20978552" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281471" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20978552" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -456,13 +471,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/index/view/tags/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/index/view/books/booklist.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -649,16 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#129#150#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/view/books/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -770,6 +768,23 @@
     <entry file="file://$PROJECT_DIR$/application/data/update/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="36">
+            <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -780,10 +795,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
+    <entry file="file://$PROJECT_DIR$/application/admin/controller/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
+        <state relative-caret-position="354">
+          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <folding>
+            <element signature="e#129#150#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
