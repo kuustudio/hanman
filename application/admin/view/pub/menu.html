@@ -1,48 +1,55 @@
-<aside class="Hui-aside">
-	<div class="menu_dropdown bk_2">
-		<dl id="menu-book">
-			<dt><i class="Hui-iconfont">&#xe616;</i> 漫画管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-			<dd>
+<aside class="Hui-admin-aside-wrapper">
+	<div class="Hui-admin-logo-wrapper">
+		<a class="logo navbar-logo" href="/aboutHui.shtml">
+			<i class="va-m iconpic global-logo"></i>
+			<span class="va-m">小涴熊漫画CMS</span>
+		</a>
+	</div>
+	<div class="Hui-admin-menu-dropdown bk_2">
+		<dl class="Hui-menu">
+			<dt class="Hui-menu-title"><i class="Hui-iconfont">&#xe616;</i> 漫画管理<i class="Hui-iconfont Hui-admin-menu-dropdown-arrow">&#xe6d5;</i></dt>
+			<dd class="Hui-menu-item">
 				<ul>
 					<li><a href="{:url('books/index')}">漫画列表</a></li>
 					<li><a href="{:url('books/create')}">漫画新增</a></li>
 				</ul>
 			</dd>
 		</dl>
-		<dl id="menu-author">
-			<dt><i class="Hui-iconfont">&#xe60d;</i> 作者管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-			<dd>
+		<dl class="Hui-menu">
+			<dt class="Hui-menu-title"><i class="Hui-iconfont">&#xe60d;</i> 作者管理<i class="Hui-iconfont Hui-admin-menu-dropdown-arrow">&#xe6d5;</i></dt>
+			<dd class="Hui-menu-item">
 				<ul>
-					<li><a href="{:url('authors/index')}">作者列表</a></li>
+                    <li><a href="{:url('authors/index')}">作者列表</a></li>
 				</ul>
 			</dd>
 		</dl>
-		<dl id="menu-lunbo">
-			<dt><i class="Hui-iconfont">&#xe613;</i> 轮播管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-			<dd>
+		<dl class="Hui-menu">
+			<dt class="Hui-menu-title"><i class="Hui-iconfont">&#xe613;</i> 轮播管理<i class="Hui-iconfont Hui-admin-menu-dropdown-arrow">&#xe6d5;</i></dt>
+			<dd class="Hui-menu-item">
 				<ul>
-					<li><a href="{:url('banner/index')}">轮播列表</a></li>
-					<li><a href="{:url('banner/create')}">轮播新增</a></li>
+                    <li><a href="{:url('banner/index')}">轮播列表</a></li>
+                    <li><a href="{:url('banner/create')}">轮播新增</a></li>
 				</ul>
 			</dd>
 		</dl>
-		<dl id="menu-site">
-			<dt><i class="Hui-iconfont">&#xe61a;</i> 其他功能<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-			<dd>
+        <dl class="Hui-menu">
+            <dt class="Hui-menu-title"><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont Hui-admin-menu-dropdown-arrow">&#xe6d5;</i></dt>
+            <dd class="Hui-menu-item">
+                <ul>
+                    <li><a href="admin-role.html" title="角色管理">管理员新增</a></li>
+                    <li><a href="admin-list.html" title="管理员列表">管理员列表</a></li>
+                </ul>
+            </dd>
+        </dl>
+		<dl class="Hui-menu">
+			<dt class="Hui-menu-title"><i class="Hui-iconfont">&#xe622;</i> 其他管理<i class="Hui-iconfont Hui-admin-menu-dropdown-arrow">&#xe6d5;</i></dt>
+			<dd class="Hui-menu-item">
 				<ul>
-					<li><a href="{:url('index/index')}">系统设置</a></li>
-					<li><a href="{:url('index/xiongzhang')}">熊掌推送</a></li>
-				</ul>
-			</dd>
-		</dl>
-		<dl>
-			<dt><i class="Hui-iconfont">&#xe61a;</i> 网站地图<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-			<dd>
-				<ul>
-					<li><a href="{:url('sitemap/index')}">生成地图</a></li>
+                    <li><a href="{:url('index/index')}">系统设置</a></li>
+                    <li><a href="{:url('index/xiongzhang')}">熊掌推送</a></li>
 				</ul>
 			</dd>
 		</dl>
 	</div>
 </aside>
-<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<div class="Hui-admin-aside-mask"></div>

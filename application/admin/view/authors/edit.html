@@ -4,10 +4,11 @@
 {/block}
 
 {block name="body"}
-<article class="cl pd-20">
+<article class="Hui-admin-page-container">
     <form action="{:url('update')}" method="post" class="form form-horizontal" enctype="multipart/form-data">
         <input type="hidden" value="{$author.id}" name="id">
-        <div class="row cl">
+        <input type="hidden" value="{$returnUrl}" name="returnUrl">
+        <div class="row clearfix">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>作者名：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="{$author.author_name}" name="author_name">
@@ -16,7 +17,7 @@
 
 
 
-        <div class="row cl">
+        <div class="row clearfix">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
                 <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
             </div>
@@ -28,7 +29,7 @@
 {include file="pub/validate_scripts" /}
 <script type="text/javascript">
     $(function(){
-        $("#form-admin-add").validate({
+        $("form").validate({
             rules:{
                 author_name:{
                     required:true,

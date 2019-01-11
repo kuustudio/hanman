@@ -10,7 +10,6 @@ namespace app\admin\controller;
 
 
 use think\Controller;
-use think\facade\Session;
 use think\Request;
 
 class Login extends Controller
@@ -21,18 +20,28 @@ class Login extends Controller
 
     public function login(Request $request){
         if ($request->isPost()){
+            $verify_code = $request->param('verify_code');
+            if( !captcha_check($verify_code ))
+            {
+                $this->error('验证码错误','/admin/login/index','',1);
+            }
             $admin = config('site.admin');
             if ($admin != $request->param('admin')){
-                $this->error('用户名错误');
+                $this->error('用户名错误','/admin/login/index','',1);
             }
             $password = config('site.password');
             if ($password != $request->param('password')){
-                $this->error('密码错误');
+                $this->error('密码错误','/admin/login/index','',1);
             }
-            Session::set('admin',$admin);
+            session('admin',$admin);
             $this->success('登录成功','admin/index/index','',1);
         }else{
             return view('index');
         }
+    }
+
+    public function logout(){
+        session('admin',null);
+        $this->redirect('/admin/login/index');
     }
 }

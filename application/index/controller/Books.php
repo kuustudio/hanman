@@ -43,8 +43,6 @@ class Books extends Base
             'tags' => $tags,
             'recommand' => $recommand,
             'start' => $start,
-            'title' => $book->bookname.'无修在线阅读',
-            'des' => $book->summary
         ]);
         if (!isMobile()){
             $updates = $this->bookService->getBooks('update_time',[],10);
@@ -67,8 +65,6 @@ class Books extends Base
 
         $this->assign([
             'books' => $books,
-            //'menus' => $menus,
-            'title' => '韩漫列表',
             'tag' => $tag
         ]);
         if (!isMobile()){

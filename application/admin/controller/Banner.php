@@ -60,13 +60,18 @@ class Banner extends BaseAdmin
     }
 
     public function edit($id){
+        $returnUrl = input('returnUrl');
         $banner = BannerModel::get($id);
-        $this->assign('banner',$banner);
+        $this->assign([
+            'banner' => $banner,
+            'returnUrl' => $returnUrl
+        ]);
         return view();
     }
 
     public function update(Request $request){
         $data = $request->param();
+        $returnUrl = $data['returnUrl'];
         $validate = new \app\admin\validate\Banner();
         if ($validate->check($data)) {
             $pic = $request->file('pic_name');
@@ -83,9 +88,9 @@ class Banner extends BaseAdmin
             $result = BannerModel::update($data);
             if ($result) {
 
-                $this->success('修改成功','index','',1);
+                $this->success('编辑成功',$returnUrl,'',1);
             }else{
-                $this->error('修改失败');
+                $this->error('编辑失败');
             }
         }else{
             $this->error($validate->getError());

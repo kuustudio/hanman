@@ -59,29 +59,29 @@ class Chapters extends BaseAdmin
 
     public function edit($id)
     {
+        $returnUrl = input('returnUrl');
         $id = input('id');
         $chapter = Chapter::get($id);
         if (!$chapter){
             $this->error('不存在的章节');
         }
-        $book_id = input('book_id');
         $this->assign([
-            'book_id' => $book_id,
-            'chapter' => $chapter
+            'chapter' => $chapter,
+            'returnUrl' => $returnUrl
         ]);
         return view();
     }
 
-    public function update(Request $request)
+    public function update()
     {
-        $book_id = input('book_id');
+        $returnUrl = input('returnUrl');
         $id = input('id');
         $chapter_name = input('chapter_name');
         $chapter = Chapter::get($id);
         if ($chapter){
             $chapter->chapter_name = $chapter_name;
             $chapter->save();
-            $this->success('编辑成功',\url('index',['book_id' => $book_id]),'',1);
+            $this->success('编辑成功',$returnUrl,'',1);
         }else{
             $this->error('章节不存在');
         }

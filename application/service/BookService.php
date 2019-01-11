@@ -51,8 +51,8 @@ class BookService
     }
 
     public function getRandBooks(){
-        $books = Db::query("SELECT ad1.id,bookname,summary FROM book AS ad1 JOIN 
-(SELECT ROUND(RAND() * ((SELECT MAX(id) FROM book)-(SELECT MIN(id) FROM book))+(SELECT MIN(id) FROM book)) AS id)
+        $books = Db::query("SELECT ad1.id,bookname,summary FROM xwx_book AS ad1 JOIN 
+(SELECT ROUND(RAND() * ((SELECT MAX(id) FROM xwx_book)-(SELECT MIN(id) FROM xwx_book))+(SELECT MIN(id) FROM xwx_book)) AS id)
  AS t2 WHERE ad1.id >= t2.id ORDER BY ad1.id LIMIT 9");
         foreach ($books as &$book){
             $book['chapter_count'] = Chapter::where('book_id','=',$book['id'])->count();
@@ -82,7 +82,7 @@ class BookService
     {
         $books = Db::query('SELECT a.id,a.bookname,a.summary,a.end,b.author_name FROM 
 (SELECT ad1.id,bookname,summary,end,author_id
-FROM book AS ad1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM book)-(SELECT MIN(id) FROM book))+(SELECT MIN(id) FROM book)) AS id)
+FROM xwx_book AS ad1 JOIN (SELECT ROUND(RAND() * ((SELECT MAX(id) FROM xwx_book)-(SELECT MIN(id) FROM xwx_book))+(SELECT MIN(id) FROM xwx_book)) AS id)
  AS t2 WHERE ad1.id >= t2.id ORDER BY ad1.id LIMIT ' . $num . ') as a
  INNER JOIN author as b on a.author_id = b.id');
         return $books;

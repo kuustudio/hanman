@@ -35,7 +35,6 @@ class Index extends Base
                 $ends = $this->bookService->getBooks('update_time',[['end','=','1']]);
                 cache('ends_homepage_mobile',$ends);
             }
-
         }else{
             $newest = cache('newest_homepage_pc');
             if (!$newest){
@@ -52,7 +51,6 @@ class Index extends Base
                 $ends = $this->bookService->getBooks('update_time',[['end','=','1']],10);
                 cache('ends',$ends);
             }
-
         }
 
         $rands = $this->bookService->getRandBooks();
@@ -68,6 +66,7 @@ class Index extends Base
             $tags = \app\model\Tags::all();
             $this->assign('tags',$tags);
         }
+
         return view($this->tpl);
     }
 

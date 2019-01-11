@@ -34,12 +34,18 @@ class Photos extends BaseAdmin
         return view();
     }
 
-    public function delete(Request $request){
-        $chapter_id = $request->param('chapter_id');
+    public function clear(){
+        $chapter_id =  input('chapter_id');
         Photo::destroy(function ($query) use($chapter_id){
             $query->where('chapter_id','=',$chapter_id);
         });
         $this->success('删除章节图片');
+    }
+
+    public function delete(){
+        $id = input('id');
+        Photo::destroy($id);
+        return ['err'=>0,'msg'=>'删除成功'];
     }
 
     public function upload(Request $request){

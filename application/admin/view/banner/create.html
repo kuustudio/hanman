@@ -4,30 +4,33 @@
 {/block}
 
 {block name="body"}
-<article class="cl pd-20">
+<article class="Hui-admin-page-container">
     <form action="{:url('save')}" method="post" class="form form-horizontal" enctype="multipart/form-data">
-        <div class="row cl">
+        <div class="row clearfix">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>标题：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" name="title">
             </div>
         </div>
 
-        <div class="row cl">
+        <div class="row clearfix">
             <label class="form-label col-xs-4 col-sm-3">图片：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="file" name="pic_name" class="input-text">
+                <span class="btn-upload">
+				<a href="javascript:;" class="btn btn-primary radius btn-upload"><i class="Hui-iconfont">&#xe642;</i> 浏览文件</a>
+				<input type="file" multiple name="pic_name" class="input-file">
+				</span>
             </div>
         </div>
 
-        <div class="row cl">
+        <div class="row clearfix">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>漫画id：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <input type="text" class="input-text" value="" name="book_id">
             </div>
         </div>
 
-        <div class="row cl">
+        <div class="row clearfix">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
                 <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
             </div>

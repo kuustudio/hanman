@@ -45,42 +45,41 @@ class Authors extends BaseAdmin
         return view('index');
     }
 
-    /**
-     * 显示编辑资源表单页.
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
-    public function edit($id)
-    {
-        $author = Author::get($id);
-        $this->assign('author',$author);
+    public function create(){
         return view();
     }
 
-    /**
-     * 保存更新的资源
-     *
-     * @param  \think\Request  $request
-     * @param  int  $id
-     * @return \think\Response
-     */
+    public function save(){
+        $author_name = input('author_name');
+        $author = new Author();
+        $author->author_name = $author_name;
+        $author->save();
+        $this->success('作者新增成功',url('authors/index'),'',1);
+    }
+
+    public function edit($id)
+    {
+        $returnUrl = input('returnUrl');
+        $author = Author::get($id);
+        $this->assign([
+            'author' => $author,
+            'returnUrl' => $returnUrl
+        ]);
+        return view();
+    }
+
     public function update(Request $request, $id)
     {
-        $result = Author::update($request->param());
+        $data = $request->param();
+        $returnUrl = $data['returnUrl'];
+        $result = Author::update($data);
         if ($result){
-            $this->success('编辑成功','index','',1);
+            $this->success('编辑成功',$returnUrl,'',1);
         }else{
             $this->error('编辑失败');
         }
     }
 
-    /**
-     * 删除指定资源
-     *
-     * @param  int  $id
-     * @return \think\Response
-     */
     public function delete($id)
     {
         $author = Author::get($id);

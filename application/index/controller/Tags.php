@@ -23,7 +23,6 @@ class Tags extends Base
         }
         $this->assign([
             'tags' => $tags,
-            'title' => '韩漫分类'
         ]);
 
 
