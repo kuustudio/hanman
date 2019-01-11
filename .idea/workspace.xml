@@ -2,149 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c5f9d75-19ef-4c9b-ae59-bb3279b1839b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/controller/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/admin/view/authors/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/css/H-ui.login.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/css/H-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/css/h-ui.admin.pro.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/css/install.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/images/acrossTab/acrossTab-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/images/admin-login-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/images/admin-loginform-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/images/cn.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/images/um.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/js/H-ui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/js/h-ui.admin.pro.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/Hui-iconfont/1.0.9/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/Hui-iconfont/1.0.9/iconfont.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/Hui-iconfont/1.0.9/iconfont.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/Hui-iconfont/1.0.9/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/Hui-iconfont/1.0.9/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/Hui-iconfont/1.0.9/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/lib/layer/3.1.1/更新日志.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/skin/black/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/skin/default/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/skin/green/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/skin/orange/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/skin/red/skin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/static/admin/skin/yellow/skin.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/hanman.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hanman.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -169,11 +26,9 @@
       <change beforePath="$PROJECT_DIR$/application/admin/view/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/login/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/photos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/photos/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/pub/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/pub/foot.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/pub/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/pub/index_scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/index_scripts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/view/pub/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/pub/menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/view/pub/wpdate.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/application/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/common.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/controller/Books.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Books.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/controller/Index.php" afterDir="false" />
@@ -192,69 +47,10 @@
       <change beforePath="$PROJECT_DIR$/application/index/view/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/index/view/tags/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/service/AuthorService.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/AuthorService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/service/BookService.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/BookService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/service/PhotoService.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/service/AdminService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/H-ui.admin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/H-ui.login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/css/H-ui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/fonts/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/fonts/iconfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/fonts/iconfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/H-ui.admin.page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/js/H-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/WdatePicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/lang/zh-cn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/lang/zh-tw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/WdatePicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/datePicker.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/default/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/default/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/datepicker-dev.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/twoer/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/whyGreen/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/whyGreen/datepicker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/My97DatePicker/4.8/skin/whyGreen/img.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/datatables/1.10.0/jquery.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/layer/2.4/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/icon-ext.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/loading-0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/loading-1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/default/loading-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/public/static/admin/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/layer/2.4/skin/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/laypage/1.2/laypage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/lib/laypage/1.2/skin/laypage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/blue/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/blue/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/blue/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/blue/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/default/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/default/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/default/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/default/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/green/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/green/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/green/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/green/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/orange/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/orange/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/orange/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/orange/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/red/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/red/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/red/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/red/skin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/yellow/acrossTab-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/yellow/acrossTab.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/yellow/icon_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/skin/yellow/skin.css" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -319,7 +115,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/install/controller/Index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="403">
@@ -327,6 +123,15 @@
               <folding>
                 <element signature="e#137#158#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookService.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -469,7 +274,7 @@
               <item name="hanman" type="b2602c69:ProjectViewProjectNode" />
               <item name="hanman" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="install" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="service" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -584,12 +389,12 @@
       <workItem from="1547114735805" duration="1810000" />
       <workItem from="1547125250589" duration="5625000" />
       <workItem from="1547177424824" duration="1687000" />
-      <workItem from="1547186737888" duration="9339000" />
+      <workItem from="1547186737888" duration="9618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87785000" />
+    <option name="totallyTimeSpent" value="88064000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -599,8 +404,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281471" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20978552" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3281471" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20978552" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -937,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/service/AdminService.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -979,6 +777,13 @@
           <folding>
             <element signature="e#137#158#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/service/BookService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
         </state>
       </provider>
     </entry>
